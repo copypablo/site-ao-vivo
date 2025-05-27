@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in Fit Play - Aulas ao Vivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-text">
+                    <h1>Life in <span class="highlight">Fit</span> Play</h1>
+                    <div class="pulse-circle"></div>
+                    <img class="logo-life-topo" src="/image/logo1.png"/>
+                </div>
+                <p class="tagline">Mais de 100 aulas ao vivo por mês</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="aula-atual" class="card fade-in">
+            <div class="card-header">
+                <h2>Aula Atual</h2>
+                <div class="pulse-dot"></div>
+            </div>
+            <div id="status-aula">
+                <p>Verificando horários...</p>
+            </div>
+            <div id="link-aula" class="hidden">
+                <a href="#" target="_blank" class="btn pulse" id="btn-aula-atual">
+                    <span class="btn-text">Participar da Aula</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="proximas-aulas" class="card slide-in-right">
+            <div class="card-header">
+                <h2>Próximas Aulas</h2>
+                <div class="icon-container">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+            </div>
+            <ul id="lista-proximas-aulas">
+                <li>Carregando horários...</li>
+            </ul>
+        </section>
+
+        <section id="provas-sociais" class="card slide-in-left">
+            <div class="card-header">
+                <h2>Nossas Aulas</h2>
+                <div class="icon-container">
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Aula de Yoga">
+                            <div class="overlay">
+                                <h3>Yoga</h3>
+                            </div>
+                        </div>
+                        <p>Aula de Yoga com a professora Ana</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Aula de Pilates">
+                            <div class="overlay">
+                                <h3>Pilates</h3>
+                            </div>
+                        </div>
+                        <p>Pilates com o professor Carlos</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Treino Funcional">
+                            <div class="overlay">
+                                <h3>Funcional</h3>
+                            </div>
+                        </div>
+                        <p>Treino Funcional com a professora Mariana</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="https://images.unsplash.com/photo-1517130038641-a774d04afb3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Aula de Zumba">
+                            <div class="overlay">
+                                <h3>Zumba</h3>
+                            </div>
+                        </div>
+                        <p>Zumba com o professor Ricardo</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Meditação">
+                            <div class="overlay">
+                                <h3>Meditação</h3>
+                            </div>
+                        </div>
+                        <p>Meditação com a professora Juliana</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Alongamento">
+                            <div class="overlay">
+                                <h3>Alongamento</h3>
+                            </div>
+                        </div>
+                        <p>Alongamento com o professor Fernando</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="card fade-in">
+            <div class="card-header">
+                <h2>Benefícios</h2>
+                <div class="icon-container">
+                    <i class="fas fa-medal"></i>
+                </div>
+            </div>
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Treine de Casa</h3>
+                    <p>Participe das aulas de qualquer lugar com conexão à internet</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horários Flexíveis</h3>
+                    <p>Mais de 6 aulas por dia em diferentes horários</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Professores Qualificados</h3>
+                    <p>Aulas com profissionais experientes e certificados</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Variedade de Treinos</h3>
+                    <p>Diferentes modalidades para todos os objetivos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Life in <span class="highlight">Fit</span> Play</h2>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/lifein.fit/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@nutrijoaomuzzy" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Life in Fit Play. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

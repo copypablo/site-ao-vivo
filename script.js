@@ -12,52 +12,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Dados das aulas (inseridos diretamente no código)
 const classData = {
-    'segunda': {
-        '08-30': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/abc-defg-hij' },
-        '10-00': { professor: 'Hayckar', link: 'https://meet.google.com/jkl-mnop-qrs' },
-        '14-00': { professor: 'Pedro Ian', link: 'https://meet.google.com/tuv-wxyz-123' },
-        '15-00': { professor: 'Ricardo Souza', link: 'https://meet.google.com/456-789a-bcd' },
-        '16-00': { professor: 'Juliana Martins', link: 'https://meet.google.com/efg-hijk-lmn' },
-        '18-00': { professor: 'Fernando Lima', link: 'https://meet.google.com/opq-rstu-vwx' },
-        '20-00': { professor: 'Patrícia Alves', link: 'https://meet.google.com/yza-123b-456' }
+       'segunda': {
+        '08-30': { professor: 'Pedro Yann', link: 'https://meet.google.com/das-ipmg-bvh' },
+        '10-00': { professor: 'Professora Flávia ', link: 'https://meet.google.com/bna-bhrq-qhk' },
+        '14-00': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/axk-cuis-iif' },
+        '15-00': { professor: 'Hayckar de Carvalho ', link: 'https://meet.google.com/asb-btsx-idx' },
+        '16-00': { professor: 'Hayckar de Carvalho ', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '18-00': { professor: 'Fernanda Constantino ', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '20-00': { professor: 'Pedro Yann', link: 'https://meet.google.com/ynf-eaqk-wgd' }
     },
     'terca': {
-        '08-30': { professor: 'Roberto Mendes', link: 'https://meet.google.com/789-cdef-ghi' },
-        '10-00': { professor: 'Camila Santos', link: 'https://meet.google.com/jkl-mnop-qrs' },
-        '14-00': { professor: 'Lucas Ferreira', link: 'https://meet.google.com/tuv-wxyz-123' },
-        '15-00': { professor: 'Beatriz Gomes', link: 'https://meet.google.com/456-789a-bcd' },
-        '16-00': { professor: 'Marcelo Dias', link: 'https://meet.google.com/efg-hijk-lmn' },
-        '18-00': { professor: 'Daniela Rocha', link: 'https://meet.google.com/opq-rstu-vwx' },
-        '20-00': { professor: 'Gustavo Pereira', link: 'https://meet.google.com/yza-123b-456' }
+        '08-30': { professor: 'Pedro Yann', link: 'https://meet.google.com/das-ipmg-bvh' },
+        '14-00': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/axk-cuis-iif' },
+        '15-00': { professor: 'Hayckar de Carvalho', link: 'https://meet.google.com/asb-btsx-idx' },
+        '16-00': { professor: 'Hayckar de Carvalho', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '18-00': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '20-00': { professor: 'Hayckar de Carvalho', link: 'https://meet.google.com/ynf-eaqk-wgd' }
     },
     'quarta': {
-        '08-30': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/abc-defg-hij' },
-        '10-00': { professor: 'André Carvalho', link: 'https://meet.google.com/jkl-mnop-qrs' },
-        '14-00': { professor: 'Renata Vieira', link: 'https://meet.google.com/tuv-wxyz-123' },
-        '15-00': { professor: 'Paulo Ribeiro', link: 'https://meet.google.com/456-789a-bcd' },
-        '16-00': { professor: 'Cristina Moraes', link: 'https://meet.google.com/efg-hijk-lmn' },
-        '18-00': { professor: 'Rodrigo Almeida', link: 'https://meet.google.com/opq-rstu-vwx' },
-        '20-00': { professor: 'Tatiana Nunes', link: 'https://meet.google.com/yza-123b-456' }
+        '08-30': { professor: 'Pedro Yann', link: 'https://meet.google.com/das-ipmg-bvh' },
+        '10-00': { professor: 'Professora Flávia ', link: 'https://meet.google.com/bna-bhrq-qhk' },
+        '14-00': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/axk-cuis-iif' },
+        '15-00': { professor: 'Hayckar de Carvalho ', link: 'https://meet.google.com/asb-btsx-idx' },
+        '16-00': { professor: 'Hayckar de Carvalho ', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '18-00': { professor: 'Fernanda Constantino ', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '20-00': { professor: 'Pedro Yann', link: 'https://meet.google.com/ynf-eaqk-wgd' }
     },
     'quinta': {
-        '08-30': { professor: 'Leonardo Campos', link: 'https://meet.google.com/abc-defg-hij' },
-        '10-00': { professor: 'Isabela Freitas', link: 'https://meet.google.com/jkl-mnop-qrs' },
-        '14-00': { professor: 'Marcos Andrade', link: 'https://meet.google.com/tuv-wxyz-123' },
-        '15-00': { professor: 'Carla Duarte', link: 'https://meet.google.com/456-789a-bcd' },
-        '16-00': { professor: 'Rafael Barros', link: 'https://meet.google.com/efg-hijk-lmn' },
-        '18-00': { professor: 'Aline Cardoso', link: 'https://meet.google.com/opq-rstu-vwx' },
-        '20-00': { professor: 'Bruno Teixeira', link: 'https://meet.google.com/yza-123b-456' }
+        '08-30': { professor: 'Pedro Yann', link: 'https://meet.google.com/das-ipmg-bvh' },
+        '14-00': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/axk-cuis-iif' },
+        '15-00': { professor: 'Hayckar de Carvalho', link: 'https://meet.google.com/asb-btsx-idx' },
+        '16-00': { professor: 'Hayckar de Carvalho', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '18-00': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '20-00': { professor: 'Hayckar de Carvalho', link: 'https://meet.google.com/ynf-eaqk-wgd' }
     },
     'sexta': {
-        '08-30': { professor: 'Vanessa Pinto', link: 'https://meet.google.com/abc-defg-hij' },
-        '10-00': { professor: 'Eduardo Mello', link: 'https://meet.google.com/jkl-mnop-qrs' },
-        '14-00': { professor: 'Natália Ramos', link: 'https://meet.google.com/tuv-wxyz-123' },
-        '15-00': { professor: 'Thiago Castro', link: 'https://meet.google.com/456-789a-bcd' },
-        '16-00': { professor: 'Luciana Borges', link: 'https://meet.google.com/efg-hijk-lmn' },
-        '18-00': { professor: 'Gabriel Moreira', link: 'https://meet.google.com/opq-rstu-vwx' },
-        '20-00': { professor: 'Amanda Vasconcelos', link: 'https://meet.google.com/yza-123b-456' }
+        '08-30': { professor: 'Pedro Yann', link: 'https://meet.google.com/das-ipmg-bvh' },
+        '10-00': { professor: 'Professora Flávia ', link: 'https://meet.google.com/bna-bhrq-qhk' },
+        '14-00': { professor: 'Fernanda Constantino', link: 'https://meet.google.com/axk-cuis-iif' },
+        '15-00': { professor: 'Hayckar de Carvalho ', link: 'https://meet.google.com/asb-btsx-idx' },
+        '16-00': { professor: 'Hayckar de Carvalho ', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '18-00': { professor: 'Fernanda Constantino ', link: 'https://meet.google.com/xbh-ytiy-ras' },
+        '20-00': { professor: 'Pedro Yann', link: 'https://meet.google.com/ynf-eaqk-wgd' }
     }
 };
+
 
 // Horários das aulas
 const classHours = [
